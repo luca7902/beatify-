@@ -1,0 +1,101 @@
+﻿.song-list {
+    height: 330px;
+}
+.song-row {
+    display: flex;
+    margin-left: 17px;
+    align-items: center;
+    padding: 8px 12px; /* Weniger Padding = kompakter */
+    transition: background 0.2s; /* Smooth Hover */
+    cursor: pointer;
+}
+
+    .song-row:hover {
+        background: #444; /* Leichter Hover-Effekt wie bei Spotify */
+    }
+
+.song-cover img {
+    width: 32px; /* Kleineres Cover */
+    height: 32px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+.song-row:hover .song-artist,
+.song-row:hover .song-title,
+.song-row:hover .song-album {
+    color: white;
+}
+.song-info {
+    width: 150px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal zentriert */
+}
+
+.song-title {
+    color: #fff;
+    font-weight: 500; /* Weniger fett für den "Spotify-Look" */
+    font-size: 0.95em; /* Kleinerer Font */
+}
+
+.song-artist {
+    color: #777;
+    font-size: 0.75em;
+}
+
+.song-album, .song-added, .song-duration {
+    flex: 1;
+    color: #777;
+    font-size: 0.75em; /* Kleinerer Font für weniger Dominanz */
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Kürzt zu lange Inhalte mit "..." */
+}
+
+.song-index {
+    width: 24px; /* Kleiner Index */
+    text-align: center;
+    margin-right: 10px;
+    color: #555;
+    font-size: 0.8em;
+}
+.body{
+    display:flex;
+}
+.artistAndSongOverview {
+    padding-bottom: 70px;
+    display: block;
+    overflow-y: scroll;
+    max-height: 100vh; /* Höhe begrenzen, sonst scrollt nichts */
+}
+/* Scrollbar allgemein */
+    .artistAndSongOverview::-webkit-scrollbar {
+        width: 8px; /* Breite der Scrollbar */
+    }
+
+/* Hintergrund der Scrollbar-Spur */
+    .artistAndSongOverview::-webkit-scrollbar-track {
+        background: #222;
+    }
+
+/* Griff der Scrollbar */
+    .artistAndSongOverview::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+
+    /* Hover-Effekt auf den Griff */
+        .artistAndSongOverview::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+
+
+
+/*position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;                                für die css des players
+background: #222;
+color: #fff;
+padding: 10px;*/

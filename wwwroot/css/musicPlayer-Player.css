@@ -1,0 +1,35 @@
+﻿.bottomPlayer-container {
+    position: fixed; /* Fixiert über allem */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Über die gesamte Breite */
+    height: 90px; /* Höhe des Players */
+    background: #111; /* Spotify-Style */
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 9999; /* Ganz oben über allem */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.5); /* Optional: Schatten nach oben */
+    justify-content: space-between; /* Abstand zwischen links, mitte, rechts */
+}
+.player-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-right: 10px
+}
+.musicPlayer-div{
+    display: flex
+}
+.player-controls {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+    .player-controls i {
+        margin: 0 10px;
+        font-size: 20px;
+    }

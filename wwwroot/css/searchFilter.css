@@ -1,0 +1,111 @@
+﻿.Filter-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px; /* Weniger Padding = kompakter */
+    border-bottom: 1px solid #333;
+}
+.Filter-info {
+    margin-left: 43px;
+    width: 145px;
+    padding-right: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal zentriert */
+}
+.Filter-hashtag {
+    margin-left: 25px;
+    margin-right: 60px;
+}
+.SongListHead-Info {
+    width: 100%;
+    height: 210px;
+}
+.Filter-title {
+    margin-right: 213px;
+}
+.Filter-genre{
+    margin-right:84px ;
+}
+.Filter-added {
+    margin-right:50px;
+}
+.Filter-duration{
+
+}
+.Filter-genre, .Filter-added, .Filter-duration, .Filter-hashtag, .Filter-title {
+    font-size: 0.75em; /* Kleinerer Font für weniger Dominanz */
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Kürzt zu lange Inhalte mit "..." */
+    cursor: default
+}
+    .Filter-genre span, .Filter-added span, .Filter-duration span, .Filter-hashtag span, .Filter-title span{
+        color: #aaa;
+    }
+        .Filter-title span:hover,
+        .Filter-genre span:hover,
+        .Filter-added span:hover,
+        .Filter-hashtag span:hover {
+            color: #fff
+        }
+
+    /* Optional: Icon-Style */
+    .Filter-duration i {
+        color: #aaa;
+        transition: color 0.2s;
+    }
+
+        .Filter-duration i:hover {
+            color: #fff;
+        }
+
+.Filter-index {
+    width: 24px; /* Kleiner Index */
+    text-align: center;
+    margin-right: 10px;
+    color: lightskyblue;
+    font-size: 0.8em;
+}
+.SongListHead-Div {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #444;
+}
+
+.headphonesIcon-Button i {
+    color: #55acee; /* heller Blau-Ton passend zum Text */
+    font-size: 80px;
+    margin-left: 40px;
+    margin-Top: 40px;
+}
+.playButtonIcon-Button {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    background: #55acee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+    .playButtonIcon-Button i {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .playButtonIcon-Button:hover {
+        background: #6fc6ff;
+        transform: scale(1.1);
+    }
+
+    .playButtonIcon-Button:active {
+        transform: scale(0.95);
+    }
+.searchFilter{
+    cursor: default;
+}
+

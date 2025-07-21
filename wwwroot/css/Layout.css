@@ -1,0 +1,11 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+.container, .main-content, .playlist-container {
+    background-color: transparent;
+}
